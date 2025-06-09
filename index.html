@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumora Website</title>
+    <link rel=" stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/fullcalendar.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/fullcalendar.min.js"></script>
+
+</head>
+<body>
+    <div class ="nav-bar">
+         <a href="#">Lumora</a>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contacts.html">CONTACT</a>
+    <button>CALL:(201) 555 0124</button>
+    </div>
+    <div class="calorie">
+        <p><b>CALORIE CONTROL, BALANCED NUTRITION</b></p>
+        <br>
+        <h1>Start living your <br> healthiest life</h1>
+        <br>
+        <button id="one">Book an appointment</button>
+    </div>
+    <br>
+    <div class="selection">
+        <div class="calendar">
+            <!-- <iframe src="https://www.canva.com/templates/EAF22Nd0MzI-modern-minimalistic-monthly-planner-june-2025-calendar/" style="border:none;" width="600" height="400" frameborder="0"></iframe> -->
+        </div>
+        <div class="appointment">
+            <p>Book an Appointment</p>
+            <h1>Wellness coaching<br> with Lumora</h1>
+            <h3>Achieve balance and well-being with personalized<br> coaching tailored to your needs. Lumora guides you<br> through sustainable lifestyle changes to help you<br> reach your health and wellness goals.
+            <br><br>
+       Start your journey to a healthier life today</h3>
+        </div>
+    </div>
+
+<div class="coaching-services">
+    <p>Coaching Services</p>
+    <br><br>
+    <h1>Create the life you want to live</h1>
+</div>
+<div class="services">
+    <div class="nutrition">
+    <img src="images/avocado.webp">
+    <h1>Personalized nutrition plans</h1>
+    <p>Create customized meal plans tailored to your individual health<br> goals, needs lifestyle preferences to help you achieve optimal<br> wellness.<b> start from: $500</b></p>
+    <button>Book an appointment</button>
+</div>
+    <div class="weight">
+        <img src="images/healthy-weight.webp">
+        <h1>Weight management counseling</h1>
+        <p>Through tailored nutrition plans, behavioral coaching, and<br> fitness advice, we focus on sustainable results your overall<br> well-being.<b> start from: $1,000</p></b>
+        <button>Book an appointment</button>
+    </div>
+    <div class="health">
+        <img src="images/peoplerunning.jpg">
+        <h1>Health and wellness coaching</h1>
+        <p>Offer one-on-one coaching sessions to help you adopt<br> healthier eating patterns, improve your overall well-being <br>manage chronic conditions<b>start from: $800</b> 
+      </p>
+       <button>Book an appointment</button>
+    </div>
+    <div class="spiritual">
+        <img src="images/massage.jpeg">
+        <h1>Expand your spiritual knowledge</h1>
+        <p>Spiritual coaching will help you to walk confidently into your<br> purpose and incorporate your spirituality into your day-to-day <br>life.<b>start from: $1,500 </b>  
+      </p>
+       <button>Book an appointment</button>
+    </div>
+</div>
+<div class="change">
+<h1>Change your life<br> through professional <br> health coaching</h1>
+<p>I help clients transform their health through personalized<br> nutrition and sustainable habits. I’ve guided over 100
+    <br> clients to better well-being by focusing on small, <br>manageable changes that lead to lasting results.</p>
+    <br><br>
+    <button>Book an appointment</button>
+</div>
+<div class="footer">
+    <h1>Lumora</h1>
+    <p>Get news about our latest sale dates</p>
+    <br>
+    <p> <b>Company</b><br><br>
+Home
+<br>
+About
+<br>
+Services
+<br>
+Contact
+<br>
+</p>
+<p><b>Services</b>
+<br><br>
+Personalized nutrition plans
+<br>
+Health and wellness coaching
+<br>
+Expand your spiritual knowledge
+<br>
+</p>
+<br>
+<p><b>Address</b>
+<br><br>
+4517 Washington Ave. <br>Manchester, Kentucky<br> 39495
+<br><br>
+Call Us: (201) 555-0124</p>
+<br>
+<div class="icons">
+         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" ><i class ="fa-brands fa-instagram"></i></a>
+         <a href="#"><i class="fa-brands fa-youtube" style="color: #e20808;"></i></a>
+    </div>
+
+</div>
+<div class="last-footer">
+    <p>Copyright © 2025 Lumora</p>
+    <img src="images/paypal.png">
+    <img src="images/visa.webp">
+    <img src="images/mastercard.jpg">
+    <img src="images/discover.png">
+    <img src="images/amex.jpg">
+</div>
+ 
+    
+    
+</body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth'
+    });
+    calendar.render();
+  });
+</script>
