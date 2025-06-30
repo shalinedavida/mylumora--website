@@ -1,45 +1,371 @@
-.calorie{
-    background-image: url("images/devin-santiago-gbGwsI0BTRM-unsplash.jpg");
-    background-size: cover;
-    height: 70vh;
-    width: 98.8vw;
-   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-bar{
-  text-align: center;
-
-    
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: #f7f8fa;
+    color: #24292f;
+    line-height: 1.6;
 }
-.nav-bar a{
+
+
+.nav-bar {
+    background: #fff;
+    padding: 18px 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-bar a {
+    color: #164863;
     text-decoration: none;
-    color: rgb(24, 23, 23);
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.07rem;
+    transition: color 0.2s;
+    margin-right: 16px;
 }
-.calorie{
-    p{
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-top: 250px;
-        padding-left: 310px;
-          color: rgb(144, 228, 18)
-        }
-    h1{
+.nav-bar a:first-child {
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #427D9D;
+    margin-right: 40px;
+}
+.nav-bar a:hover {
+    color: #9BBEC8;
+}
+.nav-bar button {
+    margin-left: auto;
+    background: #427D9D;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.nav-bar button:hover {
+    background: #164863;
+}
 
-        font-size: 60px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 300px;
-        color:  rgb(144, 228, 18)
+
+.calorie {
+    background: linear-gradient(90deg, #427D9D 0%, #9BBEC8 100%);
+    color: #fff;
+    padding: 60px 5% 48px 5%;
+    text-align: left;
+}
+.calorie p {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+.calorie h1 {
+    margin-top: 6px;
+    font-size: 2.7rem;
+    font-weight: bold;
+    line-height: 1.18;
+    letter-spacing: 0.5px;
+}
+.calorie button#one {
+    background: #fff;
+    color: #427D9D;
+    border: none;
+    padding: 13px 32px;
+    border-radius: 24px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    margin-top: 26px;
+    cursor: pointer;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.12);
+    transition: background 0.23s, color 0.23s;
+}
+.calorie button#one:hover {
+    background: #9BBEC8;
+    color: #fff;
+}
+
+
+.selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin: 48px 5% 0 5%;
+    align-items: flex-start;
+}
+.calendar {
+    flex: 1 1 320px;
+    min-width: 320px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+}
+.calendar iframe, .calendar #calendar {
+    width: 100%;
+    height: 380px;
+    border: none;
+}
+.appointment {
+    flex: 2 1 360px;
+    padding: 32px 24px;
+    background: #e3f0ff;
+    border-radius: 13px;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.08);
+}
+.appointment p {
+    font-size: 1.1rem;
+    color: #427D9D;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.appointment h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #164863;
+}
+.appointment h3 {
+    font-size: 1.08rem;
+    color: #2d4d5a;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+.coaching-services {
+    text-align: center;
+    margin: 60px 0 20px 0;
+}
+.coaching-services p {
+    color: #427D9D;
+    font-size: 1.12rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.coaching-services h1 {
+    font-size: 2.2rem;
+    color: #164863;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 36px;
+    margin: 30px 5% 60px 5%;
+}
+.services > div {
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.10);
+    padding: 18px 20px 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.services > div:hover {
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(66,125,157,0.15);
+}
+.services img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    border: 3px solid #9BBEC8;
+}
+.services h1 {
+    font-size: 1.22rem;
+    color: #427D9D;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.services p {
+    color: #24292f;
+    font-size: 0.98rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.services b {
+    color: #427D9D;
+    font-weight: 700;
+}
+.services button {
+    background: #427D9D;
+    color: #fff;
+    border: none;
+    padding: 9px 24px;
+    border-radius: 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background 0.2s;
+}
+.services button:hover {
+    background: #164863;
+}
+
+
+.change {
+    background: linear-gradient(90deg, #9BBEC8 0%, #427D9D 100%);
+    color: #fff;
+    text-align: center;
+    padding: 48px 6% 48px 6%;
+    border-radius: 13px;
+    margin: 56px 5% 40px 5%;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.10);
+}
+.change h1 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.change p {
+    font-size: 1.12rem;
+}
+.change button {
+    margin-top: 18px;
+    background: #fff;
+    color: #427D9D;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.09);
+    transition: background 0.23s, color 0.23s;
+}
+.change button:hover {
+    background: #164863;
+    color: #fff;
+}
+
+
+.footer {
+    background: #164863;
+    color: #fff;
+    padding: 38px 5% 28px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+.footer h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 12px;
+    flex-basis: 100%;
+}
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.footer b {
+    color: #9BBEC8;
+}
+.footer .icons {
+    margin-top: 16px;
+    display: flex;
+    gap: 18px;
+}
+.footer .icons a {
+    color: #fff;
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+.footer .icons a:hover {
+    color: #9BBEC8;
+}
+
+
+.last-footer {
+    background: #e3f0ff;
+    color: #164863;
+    padding: 18px 6% 8px 6%;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.last-footer p {
+    font-size: 1.08rem;
+}
+.last-footer img {
+    height: 34px;
+    margin-left: 8px;
+    border-radius: 6px;
+    background: #fff;
+    padding: 2px 6px;
+    box-shadow: 0 1px 4px rgba(66,125,157,0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .selection {
+        flex-direction: column;
+        gap: 26px;
+    }
+    .services {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .last-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
-#one{
-    border-radius: 30px;
-    padding: 16px 12px;
-    background-color: rgb(111, 177, 11);
-    color: white;
-    font-size: 20px;
-    border: solid 1px;
-   margin-left: 310px;
-   border-color: rgb(111, 177, 11);
+
+@media (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 8px;
+    }
+    .calorie {
+        padding: 32px 4% 28px 4%;
+    }
+    .appointment {
+        padding: 18px 10px;
+    }
+    .services {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .change {
+        padding: 28px 4% 28px 4%;
+        margin: 36px 2% 18px 2%;
+    }
+    .footer {
+        padding: 18px 3% 12px 3%;
+    }
+    .last-footer {
+        padding: 10px 2% 4px 2%;
+    }
 }

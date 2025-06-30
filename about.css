@@ -1,0 +1,335 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f8fa;
+    color: #24292f;
+    line-height: 1.6;
+}
+
+
+.nav-bar {
+    background: #fff;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-bar h1 {
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #427D9D;
+    margin-right: 40px;
+}
+.nav-bar a {
+    color: #164863;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.07rem;
+    margin-right: 16px;
+    transition: color 0.2s;
+}
+.nav-bar a:hover {
+    color: #9BBEC8;
+}
+.nav-bar button {
+    margin-left: auto;
+    background: #427D9D;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.nav-bar button:hover {
+    background: #164863;
+}
+
+
+.about-me {
+    background: linear-gradient(90deg, #427D9D 0%, #9BBEC8 100%);
+    color: #fff;
+    padding: 60px 5% 40px 5%;
+    text-align: left;
+}
+.about-me p {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.about-me h2 {
+    margin-top: 6px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.18;
+    letter-spacing: 0.5px;
+}
+
+
+body > div:nth-of-type(3) {
+    margin: 48px 5% 0 5%;
+}
+body > div:nth-of-type(3) h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #164863;
+    margin-bottom: 14px;
+}
+body > div:nth-of-type(3) p {
+    font-size: 1.1rem;
+    color: #2d4d5a;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+
+.support {
+    margin: 40px 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 36px;
+    background: #e3f0ff;
+    border-radius: 13px;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.08);
+    padding: 32px 24px;
+}
+.support img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #cfd8dc;
+    margin-right: 24px;
+}
+.support h1 {
+    font-size: 2rem;
+    color: #427D9D;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.support p {
+    font-size: 1.08rem;
+    color: #2d4d5a;
+    line-height: 1.6;
+}
+
+
+.percents {
+    display: flex;
+    gap: 30px;
+    margin: 56px 5% 0 5%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.percents > div {
+    flex: 1 1 220px;
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.10);
+    padding: 30px 18px 26px 18px;
+    text-align: center;
+    margin-bottom: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.percents > div:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(66,125,157,0.14);
+}
+.percents h1 {
+    font-size: 2.5rem;
+    color: #427D9D;
+    margin-bottom: 10px;
+}
+.percents h2 {
+    font-size: 1.12rem;
+    color: #164863;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.percents p {
+    font-size: 0.96rem;
+    color: #24292f;
+}
+
+
+.work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 64px 5% 40px 5%;
+    gap: 38px;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #9BBEC8 0%, #427D9D 100%);
+    color: #fff;
+    border-radius: 13px;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.10);
+    padding: 48px 6%;
+}
+.work .me {
+    flex: 1 1 340px;
+}
+.work h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 18px;
+}
+.work p {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+}
+.work button {
+    background: #fff;
+    color: #427D9D;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 14px rgba(66,125,157,0.09);
+    transition: background 0.23s, color 0.23s;
+}
+.work button:hover {
+    background: #164863;
+    color: #fff;
+}
+.work img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 16px;
+    background: #cfd8dc;
+}
+
+
+.footer {
+    background: #164863;
+    color: #fff;
+    padding: 38px 5% 28px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+.footer h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 12px;
+    flex-basis: 100%;
+}
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.footer b {
+    color: #9BBEC8;
+}
+.footer .icons {
+    margin-top: 16px;
+    display: flex;
+    gap: 18px;
+}
+.footer .icons a {
+    color: #fff;
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+.footer .icons a:hover {
+    color: #9BBEC8;
+}
+
+
+.last-footer {
+    background: #e3f0ff;
+    color: #164863;
+    padding: 18px 6% 8px 6%;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.last-footer p {
+    font-size: 1.08rem;
+}
+.last-footer img {
+    height: 34px;
+    margin-left: 8px;
+    border-radius: 6px;
+    background: #fff;
+    padding: 2px 6px;
+    box-shadow: 0 1px 4px rgba(66,125,157,0.08);
+}
+
+
+@media (max-width: 900px) {
+    .support {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+    .percents {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .work {
+        flex-direction: column;
+        gap: 18px;
+        padding: 28px 4%;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .last-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 8px;
+    }
+    .about-me {
+        padding: 32px 4% 18px 4%;
+    }
+    body > div:nth-of-type(3) {
+        margin: 18px 4% 0 4%;
+    }
+    .support {
+        padding: 12px 6px;
+    }
+    .percents > div {
+        padding: 18px 10px 18px 10px;
+    }
+    .work {
+        padding: 18px 4%;
+        margin: 28px 2% 18px 2%;
+    }
+    .footer {
+        padding: 18px 3% 12px 3%;
+    }
+    .last-footer {
+        padding: 10px 2% 4px 2%;
+    }
+}
